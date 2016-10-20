@@ -1,20 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="pickover.min.css">
+    <meta charset="UTF-8">
+    <title>Pick Over</title>
+    <link rel="stylesheet" href="pickover.min.css">
+    <link rel="stylesheet" href="demo.css">
 </head>
+
 <body>
-	<input type="text" class="pickover">
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="pickover.min.js"></script>
-	<script type="text/javascript">
-		new PickOver({
-			theme: '',
-			scheme: 'flat',
-			color: ['#aaa','#bbb','#ccc','#ddd','#eee','#fff']
-		})
-	</script>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Pick Over (Beta)</h1>
+                <p>Simple color picker for lightweight website.</p>
+                
+                <h3>Documentations</h3>
+        		<p>Pickover is so simple and lightweight color picker can customize color, multiple input, simple config and auto position.</p>
+                
+                <h4>Installation</h4>
+                <ol>
+                    <li><a target="_blank" href="https://github.com/muhibbudins/pickover">Download / Clone</a> this project from <a target="_blank" href="https://github.com/muhibbudins/pickover">Github</a></li>
+                    <li>Copy <code>pickover.min.js</code> and <code>pickover.min.css</code> to your project</li>
+                    <li>Include js file using <code>&lt;script type="text/javascript" src="pickover.min.js"></script></code></li>
+                    <li>Include css file using <code>&lt;link rel="stylesheet" href="pickover.min.css"></code></li>
+                    <li>Write config like example below</li>
+                </ol>
+                
+                <h4>Default Picker</h4>
+                <img src="1.PNG" alt="Default Picker" style="width: 100%;">
+                <pre>new PickOver({
+    scheme: 'flat'
+})</pre>
+        		
+                <h4>Material Color</h4>
+                <img src="2.PNG" alt="Material Color" style="width: 100%;">
+                <pre>new PickOver({
+    scheme: 'material'
+})</pre>
+
+                <h4>Flat UI Color</h4>
+                <img src="1.PNG" alt="Flat UI Color" style="width: 100%;">
+                <pre>new PickOver({
+    scheme: 'flat'
+})</pre>
+
+                <h4>Customize Color</h4>
+                <img src="5.PNG" alt="Customize Color" style="width: 100%;">
+                <pre>new PickOver({
+    scheme: 'flat',
+    color: ['#000','#111','#222','#333','#444','#555','#666','#777','#888','#999','#aaa','#bbb','#ccc','#ddd','#eee','#fff']
+})</pre>
+
+                <h4>Semantic Theme</h4>
+                <img src="4.PNG" alt="Semantic Theme" style="width: 100%;">
+                <pre>new PickOver({
+    theme: 'semantic',
+    scheme: 'flat'
+})</pre>
+
+                <h4>Bootstrap Theme</h4>
+                <img src="3.PNG" alt="Bootstrap Theme" style="width: 100%;">
+                <pre>new PickOver({
+    theme: 'bootstrap',
+    scheme: 'flat'
+})</pre>
+
+                <h4>Live Demo</h4>
+                <input type="text" class="demo pickover">
+
+                <h4>Todo</h4>
+                <ul>
+                    <li>More Color / Scheme</li>
+                    <li>More Theme</li>
+                    <li>Can setting Hue</li>
+                    <li>Can setting Brightness</li>
+                    <li>Can pick color from page</li>
+                    <li>Can pick color from image</li>
+                    <li>Can pick color from slider</li>
+                </ul>
+
+                <h4>License</h4>
+                This project under MIT License
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="pickover.min.js"></script>
+    <script type="text/javascript">
+	    new PickOver({
+	        theme: 'semantic',
+	        scheme: 'material'
+	    })
+    </script>
 </body>
+
 </html>
