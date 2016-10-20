@@ -1,0 +1,36 @@
+.pickpopup {
+  color: #fff;
+  max-width: 300px;
+  max-height: 500px;
+  padding: 4px;
+  z-index: 1;
+  position: absolute;
+  visibility: hidden;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 1px solid #ABABAB;
+}
+.pickpopup.bootstrap {
+  border: 1px solid #D4D4D5;
+  padding: 1em;
+  border-radius: .28571429rem;
+  box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15);
+}
+.pickpopup.semantic {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.pickpopup .pickpopup_palette {
+  width: 21px;
+  height: 21px;
+  float: left;
+  cursor: pointer;
+}
+.pickpopup .pickpopup_palette:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=pickover.css.map */
