@@ -15,14 +15,18 @@
                 <p>Simple color picker for lightweight website.</p>
                 
                 <h3>Documentations</h3>
-        		<p>Pickover is so simple and lightweight color picker can customize color, multiple input, simple config and auto position.</p>
+                <p>Pickover is so simple and lightweight color picker can customize color, multiple input, simple config and auto position.</p>
                 
+                <h4>Note</h4>
+                <p>This project using jQuery for dependency. Don't forget to include jQuery first.</p>
+
                 <h4>Installation</h4>
                 <ol>
                     <li><a target="_blank" href="https://github.com/muhibbudins/pickover">Download / Clone</a> this project from <a target="_blank" href="https://github.com/muhibbudins/pickover">Github</a></li>
                     <li>Copy <code>pickover.min.js</code> and <code>pickover.min.css</code> to your project</li>
                     <li>Include js file using <code>&lt;script type="text/javascript" src="pickover.min.js"></script></code></li>
                     <li>Include css file using <code>&lt;link rel="stylesheet" href="pickover.min.css"></code></li>
+                    <li>Add class <code>pickover</code> to your input like <code>&lt;input type="text" name="sample" class="pickover"></code></li>
                     <li>Write config like example below</li>
                 </ol>
                 
@@ -31,7 +35,7 @@
                 <pre>new PickOver({
     scheme: 'flat'
 })</pre>
-        		
+                
                 <h4>Material Color</h4>
                 <img src="2.PNG" alt="Material Color" style="width: 100%;">
                 <pre>new PickOver({
@@ -87,10 +91,10 @@
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="pickover.min.js"></script>
     <script type="text/javascript">
-	    new PickOver({
-	        theme: 'semantic',
-	        scheme: 'material'
-	    })
+        new PickOver({
+            theme: 'semantic',
+            scheme: 'material'
+        })
     </script>
 </body>
 
